@@ -71,8 +71,7 @@ in a later lesson will include this information.
 > [on this GitHub page](https://help.github.com/articles/dealing-with-line-endings/).
 {: .callout}
 
-For these lessons, we will be interacting with [GitHub](https://github.com/) and so the email address used should be the same as the one used when setting up your GitHub account. If you are concerned about privacy, please review [GitHub's instructions for keeping your email address private][git-privacy]. 
-If you elect to use a private email address with GitHub, then use that same email address for the `user.email` value, e.g. `username@users.noreply.github.com` replacing `username` with your GitHub one. You can change the email address later on by using the `git config` command again.
+For these lessons, we will be interacting with [GitLab @ UW-Madison](https://git.doit.wisc.edu/) and so the email address used should be the same as the one used for your GitLab account. 
 
 Dracula also has to set his favorite text editor, following this table:
 
@@ -144,15 +143,15 @@ You can change your configuration as many times as you want: just use the
 same commands to choose another editor or update your email address.
 
 ## SSH Background and Setup
-Before Dracula can connect to a remote repository, he needs to set up a way for his computer to authenticate with GitHub so it knows it’s him trying to connect to his remote repository. 
+Before Dracula can connect to a remote repository, he needs to set up a way for his computer to authenticate with GitLab so it knows it’s him trying to connect to his remote repository. 
 
 We are going to set up the method that is commonly used by many different services to authenticate access on the command line.  This method is called Secure Shell Protocol (SSH).  SSH is a cryptographic network protocol that allows secure communication between computers using an otherwise insecure network.  
 
 SSH uses what is called a key pair. This is two keys that work together to validate access. One key is publicly known and called the public key, and the other key called the private key is kept private. Very descriptive names.
 
-You can think of the public key as a padlock, and only you have the key (the private key) to open it. You use the public key where you want a secure method of communication, such as your GitHub account.  You give this padlock, or public key, to GitHub and say “lock the communications to my account with this so that only computers that have my private key can unlock communications and send git commands as my GitHub account.”  
+You can think of the public key as a padlock, and only you have the key (the private key) to open it. You use the public key where you want a secure method of communication, such as your GitLab account.  You give this padlock, or public key, to GitLab and say “lock the communications to my account with this so that only computers that have my private key can unlock communications and send git commands as my GitLab account.”  
 
-What we will do now is the minimum required to set up the SSH keys and add the public key to a GitHub account.
+What we will do now is the minimum required to set up the SSH keys and add the public key to a GitLab account.
 
 The first thing we are going to do is check if this has already been done on the computer you’re on.  Because generally speaking, this setup only needs to happen once and then you can forget about it. 
 
@@ -256,27 +255,26 @@ drwxr-xr-x 1 Vlad Dracula 197121   0 Jul 16 14:48 ../
 ~~~
 {: .output}
 
-### Copy the public key to GitHub
-Now we have a SSH key pair and we can run this command to check if GitHub can read our authentication.  
+### Copy the public key to GitLab
+Now we have a SSH key pair and we can run this command to check if GitLab can read our authentication.  
 
 ~~~
-ssh -T git@github.com
+ssh -T git@git.doit.wisc.edu
 ~~~
 {: .language-bash}
 
 
 ~~~
-The authenticity of host 'github.com (192.30.255.112)' can't be established.
-RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+The authenticity of host 'git.doit.wisc.edu (XXX.XX.XXX.XXX)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7seaGOCspRomTxARLfeviKw6E5SY8.
 This key is not known by any other names
-Are you sure you want to continue connecting (yes/no/[fingerprint])? y
-Please type 'yes', 'no' or the fingerprint: yes
-Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
-git@github.com: Permission denied (publickey).
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'git.doit.wisc.edu' (ED25519) to the list of known hosts.
+git.doit.wisc.edu: Permission denied (publickey).
 ~~~
 {: .output}
 
-Right, we forgot that we need to give GitHub our public key!  
+Right, we forgot that we need to give GitLab our public key!  
 
 First, we need to copy the public key.  Be sure to include the `.pub` at the end, otherwise you’re looking at the private key. 
 
@@ -304,19 +302,19 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDmRA3d51X0uu9wXek559gfn6UFNF69yZjChyBIU2qKI
 > Linux terminals will vary by distro, but try `Shift + ctrl + c` and `Shift + ctrl + v` in Bash.
 {: .callout}
 
-Now, going to GitHub.com, click on your profile icon in the top right corner to get the drop-down menu.  Click "Settings," then on the 
-settings page, click "SSH and GPG keys," on the left side "Account settings" menu.  Click the "New SSH key" button on the right side. Now, 
-you can add the title (Dracula uses the title "Vlad's Lab Laptop" so he can remember where the original key pair
-files are located), paste your SSH key into the field, and click the "Add SSH key" to complete the setup.
+Now, going to https://git.doit.wisc.edu, click on your profile icon in the top left corner to get the drop-down menu.  Click "Preferences," then on the 
+settings page, click "SSH keys," on the left side "User settings" menu.  Click the "Add new key" button on the right side. Now, 
+paste your SSH key into the "Key" field, then you can add the title (Dracula uses the title "Vlad's Lab Laptop" so he can remember where the original key pair
+files are located), and finally click the "Add key" to complete the setup.
 
 Now that we’ve set that up, let’s check our authentication again from the command line. 
 ~~~
-$ ssh -T git@github.com
+$ ssh -T git@git.doit.wisc.edu
 ~~~
 {: .language-bash}
 
 ~~~
-Hi Vlad! You've successfully authenticated, but GitHub does not provide shell access.
+Welcome to GitLab, @VLAD.DRACULA!
 ~~~
 {: .output}
 
@@ -367,4 +365,3 @@ Good! This output confirms that the SSH key works as intended. We are now ready 
 > to make git default to using the terminal for usernames and passwords.
 {: .callout}
 
-[git-privacy]: https://help.github.com/articles/keeping-your-email-address-private/
