@@ -105,21 +105,7 @@ permalink: /setup/
       </article>
       <article role="tabpanel" class="tab-pane" id="shell-macos">
         <p>
-          The default shell in some versions of macOS is Bash, and
-	        Bash is available in all versions, so no need to install anything.
-	         You access Bash from the Terminal (found in
-	          <code>/Applications/Utilities</code>).
-          You may want to keep Terminal in your dock for this workshop.
-        </p>
-        <p>
-            To see if your default shell is Bash type <code>echo $SHELL</code>
-            in Terminal and press the <kbd>Return</kbd> key. If the message
-            printed does not end with '/bash' then your default is something
-            else and you can run Bash by typing <code>bash</code>
-        </p>
-        <p>
-          If you want to change your default shell, see <a href="https://support.apple.com/en-au/HT208050" rel="noopener">
-          this Apple Support article</a> and follow the instructions on "How to change your default shell".
+          You already have bash or zshell installed as part of macOS and can use that for learning the Unix shell.
         </p>
       </article>
       <article role="tabpanel" class="tab-pane" id="shell-linux">
