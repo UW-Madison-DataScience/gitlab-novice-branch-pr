@@ -154,7 +154,8 @@ the text below accordingly.
     You will need an account at <a href="https://git.doit.wisc.edu/">the UW GitLab instance</a>
     for parts of the Git lesson. An account should be provisioned for you when you log in with your
     netid.  See the <a href="https://kb.wisc.edu/shared-tools/page.php?id=121442">Gitlab Knowledgebase</a>
- for  </p>
+    for additional information about setting up an account.  
+  </p>
 
   <div>
     <ul class="nav nav-tabs" role="tablist">
