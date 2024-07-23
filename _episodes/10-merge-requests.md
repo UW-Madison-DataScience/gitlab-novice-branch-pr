@@ -1,5 +1,5 @@
 ---
-title: Pull Requests
+title: Merge Requests
 teaching: 60
 exercises: 15
 questions:
