@@ -315,10 +315,10 @@ Then you can click the 'create merge request' button to submit the merge request
 
 Now someone with privileges to the upstream repo can review it, give comments and
 suggestions, and merge it into the upstream version.
-In our pull request they can see any messages we left or click and look at the commits that were made and see the files changed.
+In our merge request they can see any messages we left or click and look at the commits that were made and see the files changed.
 
-Our collaborator reviewing the pull request noticed that 
-we forgot to add the largest city so let's add it and update our pull request.
+Our collaborator reviewing the merge request noticed that 
+we forgot to add the largest city so let's add it and update our merge request.
 <!--- this could be instructor note when we move to workbench -->
 
 ~~~
@@ -365,7 +365,7 @@ if you want the changes to be considered together you should put them in the sam
 ![](../fig/github_screenshot_after_new_commit.png)
 -->
 
-Now the owner/administrator/manager of the upstream repo can review our pull requests and decide to incorporate them.
+Now the owner/administrator/manager of the upstream repo can review our merge requests and decide to incorporate them.
 
 
 > ## Add new country file and make additional MR
