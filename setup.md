@@ -192,8 +192,7 @@ the text below accordingly.
           (Note: this project is no longer maintained.)
           Because this installer is not signed by the developer, you may have to
           right click (control click) on the .pkg file, click Open, and click
-          Open in the pop-up dialog. You can watch 
-          <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">a video tutorial about this case</a>.
+          Open in the pop-up dialog.
         </p>
       </article>
       <article role="tabpanel" class="tab-pane" id="git-linux">
