@@ -135,7 +135,7 @@ the text below accordingly.
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
     version of your code
-    on GitLab. You will need a web browser</a>.
+    on GitLab. You will need a web browser.
   </p>
   <p>
     You will need an account at <a href="https://git.doit.wisc.edu/">the UW GitLab instance</a>
