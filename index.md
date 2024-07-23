@@ -47,6 +47,7 @@ to be shared can and should be stored in a version control system.
 > ## Prerequisites
 >
 > In this lesson we use Git from the Unix Shell.
-> Some previous experience with the shell is expected,
-> *but isn't mandatory*.
+> You will need to be somewhat comfortable with navigating
+> your filesystem with the Unix Shell to make the most
+> of this lesson.
 {: .prereq}
