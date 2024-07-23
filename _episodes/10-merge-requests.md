@@ -60,7 +60,7 @@ First we will **clone** the repo from our forked version.
 The clone command does two things:
 
 1. Copies the repo to your local computer
-2. Sets up a remote called 'origin' between your computer and the github repo
+2. Sets up a remote called 'origin' between your computer and the GitLab repo
 
 Copy the SSH address for your forked version of repo 
 (click the "Code" button and then use the clipboard to copy the SSH address to your clipboard).
@@ -142,10 +142,10 @@ $ git remote -v
 {: .bash}
 
 ~~~
-origin	https://github.com/USERNAME/countries.git (fetch)
-origin	https://github.com/USERNAME/countries.git (push)
-upstream	https://github.com/INSTRUCTOR-GIVEN/countries.git (fetch)
-upstream	https://github.com/INSTRUCTOR-GIVEN/countries.git (push)
+origin	git@git.doit.wisc.edu:USERNAME/countries.git (fetch)
+origin	git@git.doit.wisc.edu:USERNAME/countries.git (push)
+upstream	git@git.doit.wisc.edu:INSTRUCTOR-GIVEN/countries.git (fetch)
+upstream	git@git.doit.wisc.edu:INSTRUCTOR-GIVEN/countries.git (push)
 ~~~
 {: .output}
 
@@ -368,13 +368,13 @@ if you want the changes to be considered together you should put them in the sam
 Now the owner/administrator/manager of the upstream repo can review our pull requests and decide to incorporate them.
 
 
-> ## Add new country file and make additional PR
+> ## Add new country file and make additional MR
 >
 > - Starting in the main branch make a new branch
 > - Copy other country file into a new country
 > - Edit the file to include info on the new country
 > - Add and commit this new file
-> - Push the new changes to github
+> - Push the new changes to GitLab
 >
 > > ## Solution
 > >
