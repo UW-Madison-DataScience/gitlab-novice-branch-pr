@@ -101,6 +101,7 @@ permalink: /setup/
             </ol>
 	  </li>
         </ol>
+        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
       </article>
       <article role="tabpanel" class="tab-pane" id="shell-macos">
         <p>
