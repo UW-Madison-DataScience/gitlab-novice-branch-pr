@@ -24,52 +24,68 @@ permalink: /setup/
           <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
           <li>Run the installer and follow the steps below:
             <ol>
-              {% comment %} Git 2.35.1.2 Setup {% endcomment %}
+              {% comment %} Git 2.29.1 Setup {% endcomment %}
               <li>
-                Click on "Next" to accept the license agreement, again to accept the default installation path, again to select the default components, and a fourth time to name a start menu folder.
-                (If you have git installed already, see the note below.)
+                Click on "Next" four times (two times if you've previously
+                installed Git).  You don't need to change anything
+                in the Information, location, components, and start menu screens.
               </li>
               <li>
-                  From the dropdown menu select "Use the nano editor by default" and click on "Next".
+                <strong>
+                  From the dropdown menu, "Choosing the default editor used by Git", select "Use the Nano editor by default" (NOTE: you will need to scroll <emph>up</emph> to find it) and click on "Next".
+                </strong>
               </li>
+              {% comment %} Adjusting the name of the initial branch in new repositories {% endcomment %}
               <li>
-                Select "Override the default branch name for new repositories" and leave it set to <code>main</code>. Click on "Next".
+                On the page that says "Adjusting the name of the initial branch in new repositories", ensure that
+		"Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+		{% comment %}
+		This section also has "Override the default branch name for new repositories" and has a text box set
+		to "main". I'm not having people switch to this just yet because our git lesson still uses the old paradigm.
+		{% endcomment %}     
               </li>
+              {% comment %} Adjusting your PATH environment {% endcomment %}
               <li>
                 Ensure that "Git from the command line and also from 3rd-party software" is selected and
                 click on "Next". (If you don't do this Git Bash will not work properly, requiring you to
                 remove the Git Bash installation, re-run the installer and to select the "Git from the
                 command line and also from 3rd-party software" option.)
               </li>
+              {% comment %} Choosing the SSH executable {% endcomment %}
+ 	      <li>
+	      Select "Use bundled OpenSSH".
+	      </li>
+              {% comment %} Choosing HTTPS transport backend {% endcomment %}
               <li>
-                Select "Use bundled OpenSSH" and click on "Next".
-              </li>
-              <li>
-		            Select "Use the native Windows Secure Channel library" and click on "Next".
-	            </li>
+		Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+	      </li>
               {% comment %} This should mean that people stuck behind corporate firewalls that do MITM attacks
-              with their own root CA are still able to access remote git repos. {% endcomment %}
+                                 with their own root CA are still able to access remote git repos. {% endcomment %}
               {% comment %} Configuring the line ending conversions {% endcomment %}
               <li>
                 Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
               </li>
               {% comment %} Configuring the terminal emulator to use with Git Bash {% endcomment %}
               <li>
+                <strong>
                   Ensure that "Use Windows' default console window" is selected and click on "Next".
+                </strong>
               </li>
               {% comment %} Configuring extra options {% endcomment %}
               <li>
-		            Ensure that "Default (fast-forward or merge) is selected and click "Next"
+		Ensure that "Default (fast-forward or merge) is selected and click "Next"
               </li>
               <li>
-                Ensure that "Get Crediential Manager" is selected and click on "Next".
+		Ensure that "Git Credential Manager" is selected and click on "Next".
               </li>
               <li>
-                Ensure that "Enable file system caching" is checked and click on "Next".
+		Ensure that "Enable file system caching" is selected and click on "Next".
               </li>
-              <li>
-                Do not enable either of the "experimental options". Click "Install".
-              </li>
+              {% comment %} Configuring experimental options {% endcomment %}
+              <li>Click on "Install".</li>
+              {% comment %} Installing {% endcomment %}
+              {% comment %} Completing the Git Setup Wizard {% endcomment %}
+              {% comment %} as of 2020-06-02, the Window will say "click Finish", but the button is labelled as "Next" {% endcomment %}
               <li>Click on "Finish" or "Next".</li>
             </ol>
           </li>
@@ -84,10 +100,8 @@ permalink: /setup/
               <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
               <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
             </ol>
-	  </li>
-        </ol>
         <p>This will provide you with both Git and Bash in the Git Bash program.</p>
-        <p>If you already have git installed, running the installer will upgrade to the newest verison, currently 2.35.1.2. When you launch the installer, ensure "Only show new options" is <strong>unchecked</strong>.</p>    
+        <p>If you already have git installed, running the installer will upgrade to the newest verison. When you launch the installer, ensure "Only show new options" is <strong>unchecked</strong>.</p>    
       </article>
       <article role="tabpanel" class="tab-pane" id="shell-macos">
         <p>
