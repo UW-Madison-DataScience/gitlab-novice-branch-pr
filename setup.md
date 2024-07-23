@@ -19,7 +19,6 @@ permalink: /setup/
     </ul>
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="shell-windows">
-        <p>Windows users will install a bash shell called Git Bash when installing git following the instructions below:</p>
         <ol>
           <li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
           <li>Run the installer and follow the steps below:
@@ -100,8 +99,8 @@ permalink: /setup/
               <li>Press <kbd>Enter</kbd>, you should see <code>SUCCESS: Specified value was saved.</code></li>
               <li>Quit command prompt by typing <code>exit</code> then pressing <kbd>Enter</kbd></li>
             </ol>
-        <p>This will provide you with both Git and Bash in the Git Bash program.</p>
-        <p>If you already have git installed, running the installer will upgrade to the newest verison. When you launch the installer, ensure "Only show new options" is <strong>unchecked</strong>.</p>    
+	  </li>
+        </ol>
       </article>
       <article role="tabpanel" class="tab-pane" id="shell-macos">
         <p>
@@ -149,19 +148,13 @@ the text below accordingly.
     Git is a version control system that lets you track who made changes
     to what when and has options for easily updating a shared or public
     version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported
-    web browser</a>.
+    on GitLab. You will need a web browser</a>.
   </p>
   <p>
-    You will need an account at <a href="https://github.com/">github.com</a>
-    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-    you to create a GitHub account if you don't have one already.
-    Please consider what personal information you'd like to reveal. For
-    example, you may want to review these
-    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-      for keeping your email address private</a> provided at GitHub.
-  </p>
+    You will need an account at <a href="https://git.doit.wisc.edu/">the UW GitLab instance</a>
+    for parts of the Git lesson. An account should be provisioned for you when you log in with your
+    netid.  See the <a href="https://kb.wisc.edu/shared-tools/page.php?id=121442">Gitlab Knowledgebase</a>
+ for  </p>
 
   <div>
     <ul class="nav nav-tabs" role="tablist">
