@@ -55,7 +55,7 @@ Then click "Create project".
 ![Creating a Repository on GitHub (Step 2)](../fig/github-create-repo-02.png)
 -->
 
-As soon as the repository is created, GitHub displays a page with a URL and some
+As soon as the repository is created, GitLab displays a page with a URL and some
 information on how possible options for next steps.
 
 <!--- replace this image for GitLab
@@ -143,7 +143,7 @@ talking about how they might be used for collaboration.
 ## 3. Push local changes to a remote
 
 This command will push the changes from
-our local repository to the repository on GitHub:
+our local repository to the repository on GitLab:
 
 ~~~
 $ git push origin main
@@ -242,7 +242,7 @@ Already up-to-date.
 
 Pulling has no effect in this case because the two repositories are already
 synchronized.  If someone else had pushed some changes to the repository on
-GitHub, though, this command would download them to our local repository.
+GitLab, though, this command would download them to our local repository.
 
 ## Practicing syncing with a pretend 2nd laptop
 
