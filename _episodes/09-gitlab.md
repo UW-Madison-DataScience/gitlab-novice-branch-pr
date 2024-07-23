@@ -1,5 +1,5 @@
 ---
-title: Remotes in Lab
+title: Remotes in GitLab
 teaching: 45
 exercises: 0
 questions:
