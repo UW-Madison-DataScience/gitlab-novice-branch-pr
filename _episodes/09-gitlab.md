@@ -111,6 +111,8 @@ Click on the "Code" blue button and click the little clickboard icon next to the
 Now that we have copied the address from the browser, 
 go into the local `planets` repository, and run this command:
 
+**the picture is incorrectly labeled. It reads `github.com` but it should be `git.doit.wisc.edu`**
+
 ~~~
 $ git remote add origin git@git.doit.wisc.edu:VLAD.DRACULA/planets.git
 ~~~
