@@ -305,7 +305,7 @@ $ cat venus.txt
 {: .language-bash}
 
 ~~~
-We should explore venus next
+The lack of moons may make this an ideal place for Wolfman
 ~~~
 {: .output}
 
@@ -314,7 +314,7 @@ Now we need to do our usual git cycle and add and commit the new file.
 
 ~~~
 $ git add venus.txt
-$ git commit -m "new notes on exploring venus"
+$ git commit -m "notes on venus' moons"
 ~~~
 {: .language-bash}
 
