@@ -90,6 +90,7 @@ Dracula also has to set his favorite text editor, following this table:
 | Scratch (Linux)       | `$ git config --global core.editor "scratch-text-editor"`  |
 | emacs              | `$ git config --global core.editor "emacs"`   |
 | vim                | `$ git config --global core.editor "vim"`   |
+| VS code            | `$ git config --global core.editor "code --wait"` |
 
 It is possible to reconfigure the text editor for Git whenever you want to change it.
 
