@@ -40,10 +40,10 @@ in your browser window.
 -->
 
 Once at the `countries` project, click the **Fork** button which can be found
-in the upper right hand conner of the window. 
+in the upper right hand corner of the window. 
 Forking the project makes us each our own copy of the repo in our GitLab 
 account which we can edit.
-On the "Fork project" page, you can chagne the project name if you'd like (but we will leave it the same),
+On the "Fork project" page, you can change the project name if you'd like (but we will leave it the same),
 and you can change the project URL to be at your namespace in the dropdown menu.
 If you belong to other groups in GitLab you may see those as options as well.
 You can leave all the other options as the defaults and then click the "Fork project" button at the bottom of the page.
